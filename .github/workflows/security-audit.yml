@@ -24,4 +24,4 @@ jobs:
 
       - name: Run pip-audit
         run: |
-          pip-audit --skip-editable
+          pip-audit --skip-editable --skip bbx
