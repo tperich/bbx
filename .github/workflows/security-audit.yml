@@ -24,4 +24,5 @@ jobs:
 
       - name: Run pip-audit
         run: |
-          pip-audit --skip-editable --skip bbx
+          # Audit installed environment (project + dependencies)
+          pip-audit
