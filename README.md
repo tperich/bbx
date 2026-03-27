@@ -3,6 +3,12 @@
 
 # bbx toolkit
 
+[![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml)
+[![Security Audit](https://github.com/<OWNER>/<REPO>/actions/workflows/security-audit.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/security-audit.yml)
+[![Release](https://github.com/<OWNER>/<REPO>/actions/workflows/release.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/release.yml)
+
+> Replace `<OWNER>/<REPO>` with your GitHub repo path after first push.
+
 A SQLite-backed CLI for organizing bug bounty artifacts.
 
 This toolkit imports existing outputs from recon, crawling, and HTTP capture tools, stores them in SQLite, ranks interesting rows, supports tagging, and can export correlation graphs.
