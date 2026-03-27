@@ -3,11 +3,9 @@
 
 # bbx toolkit
 
-[![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml)
-[![Security Audit](https://github.com/<OWNER>/<REPO>/actions/workflows/security-audit.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/security-audit.yml)
-[![Release](https://github.com/<OWNER>/<REPO>/actions/workflows/release.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/release.yml)
-
-> Replace `<OWNER>/<REPO>` with your GitHub repo path after first push.
+[![CI](https://github.com/tperich/bbx/actions/workflows/ci.yml/badge.svg)](https://github.com/tperich/bbx/actions/workflows/ci.yml)
+[![Security Audit](https://github.com/tperich/bbx/actions/workflows/security-audit.yml/badge.svg)](https://github.com/tperich/bbx/actions/workflows/security-audit.yml)
+[![Release](https://github.com/tperich/bbx/actions/workflows/release.yml/badge.svg)](https://github.com/tperich/bbx/actions/workflows/release.yml)
 
 A SQLite-backed CLI for organizing bug bounty artifacts.
 
