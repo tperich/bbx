@@ -1,0 +1,50 @@
+from bbx import core
+
+
+def register(subparsers):
+    p = subparsers.add_parser("scan-register-url", help="Register a URL as a scan asset")
+    p.add_argument("program")
+    p.add_argument("url")
+    p.set_defaults(func=core.cmd_scan_register_url)
+
+    p = subparsers.add_parser("scan-plan", help="Plan scan checks from a profile")
+    p.add_argument("program")
+    p.add_argument("--profile", default="safe-recon")
+    p.add_argument("--host")
+    p.add_argument("--tool")
+    p.add_argument("--contains")
+    p.add_argument("--path-prefix")
+    p.add_argument("--min-score", type=int, default=0)
+    p.add_argument("--limit", type=int, default=0)
+    p.add_argument("--priority", type=int, default=100)
+    p.set_defaults(func=core.cmd_scan_plan)
+
+    p = subparsers.add_parser("scan-queue", help="Queue a single scan check")
+    p.add_argument("program")
+    p.add_argument("--asset-id", type=int, required=True)
+    p.add_argument("--check", required=True)
+    p.add_argument("--profile")
+    p.add_argument("--priority", type=int, default=100)
+    p.set_defaults(func=core.cmd_scan_queue)
+
+    p = subparsers.add_parser("scan-run", help="Run queued scan checks")
+    p.add_argument("program")
+    p.add_argument("--limit", type=int, default=10)
+    p.add_argument("--allowlist")
+    p.add_argument("--auth-header", action="append", default=[])
+    p.add_argument("--timeout", type=int)
+    p.add_argument("--delay", type=float)
+    p.add_argument("--max-requests", type=int)
+    p.set_defaults(func=core.cmd_scan_run)
+
+    p = subparsers.add_parser("scan-results", help="List scan runs")
+    p.add_argument("program")
+    p.add_argument("--limit", type=int, default=25)
+    p.add_argument("--format", choices=["text", "json", "csv"], default="text")
+    p.set_defaults(func=core.cmd_scan_results)
+
+    p = subparsers.add_parser("scan-findings", help="List scan findings")
+    p.add_argument("program")
+    p.add_argument("--limit", type=int, default=25)
+    p.add_argument("--format", choices=["text", "json", "csv"], default="text")
+    p.set_defaults(func=core.cmd_scan_findings)

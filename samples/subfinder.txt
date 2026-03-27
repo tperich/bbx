@@ -1,0 +1,3 @@
+api.example.test
+admin.example.test
+app.example.test

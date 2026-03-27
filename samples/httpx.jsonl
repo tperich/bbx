@@ -1,0 +1,2 @@
+{"url": "https://app.example.test", "status_code": 200, "title": "App", "tech": ["nginx", "react"]}
+{"url": "https://admin.example.test", "status_code": 403, "title": "Admin", "tech": ["nginx"]}

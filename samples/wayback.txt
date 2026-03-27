@@ -1,0 +1,2 @@
+https://legacy.example.test/admin
+https://legacy.example.test/api/v1/users

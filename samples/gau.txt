@@ -1,0 +1,2 @@
+https://app.example.test/api/export/users
+https://app.example.test/debug/config

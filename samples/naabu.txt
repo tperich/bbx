@@ -1,0 +1,2 @@
+app.example.test:443
+admin.example.test:8443

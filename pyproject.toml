@@ -1,0 +1,9 @@
+[project]
+name = "bbx"
+version = "0.1.0"
+description = "SQLite-backed CLI for organizing bug bounty artifacts"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+readme = "README.md"
+
+dependencies = ["requests>=2.31.0"]
