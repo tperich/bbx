@@ -13,7 +13,7 @@ authors = [
   { name = "Tomislav Perić" }
 ]
 dependencies = [
-  "requests>=2.31.0",
+  "requests>=2.33.1",
   "PyYAML>=6.0",
 ]
 
